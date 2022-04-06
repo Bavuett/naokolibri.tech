@@ -1,0 +1,10 @@
+nav.navigation {
+    position: fixed;
+    padding-top: 1.2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.nav-title {
+    color: white;
+}
