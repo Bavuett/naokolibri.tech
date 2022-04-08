@@ -54,10 +54,6 @@ h1, h2, h3, h4, h5, h6, p{
     background: transparent;
 }
 
-h1 {
-    font-size: 34px;
-}
-
 p {
     font-family: halyard-micro, sans-serif;
     font-weight: 400;
