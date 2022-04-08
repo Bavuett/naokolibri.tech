@@ -25,7 +25,7 @@ nav {
     border-bottom: none;
 }
 
-nav .scrolled {
+nav.scrolled {
 	border-bottom: solid 2px black;
 }
 
@@ -56,9 +56,14 @@ div {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     background: transparent;
+}
+
+h1#title-h1.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 a {
