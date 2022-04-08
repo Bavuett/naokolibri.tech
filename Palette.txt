@@ -1,3 +1,6 @@
 #F8A6CD 60%
 #DE00FF 30%
 #8A00FF 10%
+
+halyard-text
+corporate-s-std-urw

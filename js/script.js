@@ -1,14 +1,14 @@
 const navBar = document.getElementById("nav-main");
 const title = document.getElementById("title-h1");
 
-window.addEventListener("scroll", function(){
+function scroll() {
     if (window.scrollY < 120){
-      navBar.classList.remove("scrolled");
-      title.classList.add("hidden");
+        navBar.classList.remove("scrolled");
+        title.classList.add("hidden");
     } else {
-      navBar.classList.add("scrolled");
-      title.classList.remove("hidden");
-    }
+        navBar.classList.add("scrolled");
+        title.classList.remove("hidden");
+    } 
+}
 
-    console.log(window.scrollY);
-});
+window.addEventListener("scroll", scroll());

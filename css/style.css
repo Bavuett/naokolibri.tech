@@ -9,6 +9,7 @@
     cursor: default;
     user-select: none;
     background: #F8A6CD;
+    scroll-behavior: smooth;
     color: black;
 }
 
@@ -29,19 +30,6 @@ nav.scrolled {
 	border-bottom: solid 2px black;
 }
 
-div.nav-spacer {
-	background: #DE00FF;
-	width: 100%;
-    padding: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-div.nav-spacer h1 {
-	opacity: 0;
-	pointer-events: none;
-}
-
 header {
 	background: #DE00FF;
 	width: 100%;
@@ -55,11 +43,21 @@ div {
 	background: transparent;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: corporate-s, sans-serif;
+div.button-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: corporate-s-std-urw, sans-serif;
+    font-weight: 700;
+    background: transparent;
+}
+
+p {
+    font-family: halyard-micro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: transparent;
 }
 
 h1#title-h1.hidden {
@@ -68,7 +66,7 @@ h1#title-h1.hidden {
 }
 
 a {
-    color: white;
+    color: black;
     background: transparent;
     text-decoration: none;
     cursor: pointer;
@@ -91,6 +89,46 @@ a h1{
 a h1:hover {
     opacity: 0.8;
     transition: all 0.3 ease 0s;
+}
+
+div.nav-spacer {
+	background: #DE00FF;
+	width: 100%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+div.nav-spacer h1 {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.link-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+div.link-container p a {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+div.link-container p a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    font-family: halyard-micro, sans-serif;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background: black;
+    color: white;
 }
 
 @media screen and (max-width: 900px) {
