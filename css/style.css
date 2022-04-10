@@ -30,9 +30,38 @@ nav.scrolled {
     border-bottom: solid 2px black;
 }
 
+nav h1 {
+    font-size: 24px;
+}
+
+noscript {
+    background: transparent;
+}
+
+.splash-screen h2 {
+    font-size: 36px;
+}
+
+.splash-screen p {
+    font-size: 20px;
+}
+
+.splash-screen noscript p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+}
+
 header {
     background: #DE00FF;
     width: 100%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: solid 2px black;
+}
+
+section {
     padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
@@ -43,18 +72,45 @@ div {
    background: transparent;
 }
 
-div.button-container {
-    padding-top: 2%;
-    padding-bottom: 2%;
+div.splash-screen {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #dd00ff;
+    border-bottom: solid 2px black;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+div.splash-screen.hidden {
+    transform: translateY(-100%);
+    transition: all 1s ease 0s;
+}
+
+span.material-icons-round {
+    position: relative;
+    background: transparent;
+    vertical-align: text-bottom;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
     font-family: corporate-s-std-urw, sans-serif;
     font-weight: 700;
     background: transparent;
 }
 
+h1 {
+    font-size: 48px;
+}
+
 p {
+    background: transparent;
     font-family: halyard-micro, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -77,6 +133,11 @@ a {
 a:hover {
     opacity: 0.5;
     transition: all 0.3 ease 0s;
+}
+
+a:active {
+    transition: all 0.3s ease 0s;
+    transform: scale(0.5);
 }
 
 a h1{
@@ -120,15 +181,20 @@ div.link-container p a:hover {
     text-decoration: none;
 }
 
+div.button-container {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
 button {
-    width: 50%;
+    width: 100%;
     height: 50px;
     border: none;
     font-family: halyard-micro, sans-serif;
-    text-transform: uppercase;
-    border-radius: 15px;
+    font-size: 16px;
     background: black;
     color: white;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -149,4 +215,9 @@ button {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

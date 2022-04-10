@@ -2,20 +2,29 @@
 <html lang="it">
     <head>
         <title>Kolibri - NAO Challenge 2022</title>
+        <link rel="preload" href="js/script.js" as="script">
         <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1"> 
         <link rel="stylesheet" href="https://use.typekit.net/oje2wks.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     </head>
     <body>
+        <div class="splash-screen" id="splash-screen">
+            <h2>Kolibri</h2>
+            <p>NAO Challenge 2022</p>
+            <noscript>
+                <p>Per visualizzare questa pagina, devi avere JavaScript attivato.</p>
+            </noscript>
+        </div>
         <nav id="nav-main">
             <div class="title-div">
-                <a href="">
+                <a onclick="switchPage('')">
                     <h1 id="title-h1" class="hidden">Kolibri</h1>
                 </a>
             </div>
             <div class="menu-div">
-				<a href="">
+				<a onclick="switchPage('')">
 					<h1>Blog</h1>
 				</a>
             </div>
@@ -28,10 +37,31 @@
             <p>Noi siamo Kolibri, la Squadra di Robotica dell'IIS A. Volta Pescara che parteciperà alla NAO Challenge 2022.</p>
             <div class="link-container">
                 <p>
-                    <a href="">Informazioni</a>
+                    <a onclick="switchPage('')">Mostrami di più <span class="material-icons-round">shortcut</span></a>
                 </p>
             </div>
         </header>
+        <section>
+            <div class="section-header">
+                <h2>Il team</h2>
+                <p>
+                    Siamo un gruppo di studenti dell'Istituto di Istruzione Superiore Alessandro Volta che, insieme, prenderanno
+                    parte alla NAO Challenge, una competizione organizzata da Scuola di Robotica nel quale esploreremo
+                    il potenziale dei robot in diverse aree della vita quotidiana.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="button-container">
+                    <button>Mostrami di più</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-header">
+                <h2>Ultimi articoli</h2>
+                <p>Cosa facciamo? Su cosa stiamo lavorando in questo momento? </p>
+            </div>
+        </section>
         <script src="js/script.js"></script>
     </body>
 </html>
