@@ -2,6 +2,8 @@ const navBar = document.getElementById("nav-main");
 const title = document.getElementById("title-h1");
 const splash = document.getElementById("splash-screen");
 
+console.log((screen.width * 10) / 100);
+
 function scroll() {
     if (window.scrollY < 120){
         navBar.classList.remove("scrolled");
@@ -10,6 +12,7 @@ function scroll() {
         navBar.classList.add("scrolled");
         title.classList.remove("hidden");
     } 
+    console.log(window.scrollY);
 }
 
 window.addEventListener("scroll", scroll());

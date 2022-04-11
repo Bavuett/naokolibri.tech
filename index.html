@@ -34,10 +34,12 @@
         </div>
         <header>
 			<h1>Kolibri</h1>
-            <p>Noi siamo Kolibri, la Squadra di Robotica dell'IIS A. Volta Pescara che parteciperà alla NAO Challenge 2022.</p>
+            <p>
+				Noi siamo Kolibri, la Squadra di Robotica dell'IIS A. Volta Pescara che parteciperà alla NAO Challenge 2022.
+			</p>
             <div class="link-container">
                 <p>
-                    <a onclick="switchPage('')">Mostrami di più <span class="material-icons-round">shortcut</span></a>
+                    <a onclick="switchPage('')">Mostrami di più <span class="material-icons-round more-icon">shortcut</span></a>
                 </p>
             </div>
         </header>
@@ -52,14 +54,23 @@
             </div>
             <div class="section-content">
                 <div class="button-container">
-                    <button>Mostrami di più</button>
+                    <button onclick="switchPage('')">Mostrami di più</button>
                 </div>
             </div>
         </section>
         <section>
             <div class="section-header">
                 <h2>Ultimi articoli</h2>
-                <p>Cosa facciamo? Su cosa stiamo lavorando in questo momento? </p>
+                <p>
+					Cosa facciamo? Su cosa stiamo lavorando in questo momento? <br> Scoprilo leggendo
+					gli ultimi post dal nostro blog.
+                </p>
+            </div>
+            <div class="section-content">
+				<div class="articles-container"></div>
+                <div class="button-container">
+                    <button onclick="switchPage('')">Mostrami di più</button>
+                </div>
             </div>
         </section>
         <script src="js/script.js"></script>
