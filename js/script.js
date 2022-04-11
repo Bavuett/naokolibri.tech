@@ -4,7 +4,7 @@ const splash = document.getElementById("splash-screen");
 
 console.log((screen.width * 10) / 100);
 
-function scroll() {
+window.addEventListener("scroll", function() {
     if (window.scrollY < 120){
         navBar.classList.remove("scrolled");
         title.classList.add("hidden");
@@ -13,9 +13,7 @@ function scroll() {
         title.classList.remove("hidden");
     } 
     console.log(window.scrollY);
-}
-
-window.addEventListener("scroll", scroll());
+});
 
 window.addEventListener("load", function(event) {
     this.setTimeout(function() {
