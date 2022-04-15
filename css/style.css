@@ -69,6 +69,23 @@ section {
     border-bottom: solid 2px black;
 }
 
+article {
+    width: 100%;
+    height: 180px;
+    background: #ffc900;
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+footer {
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 div {
    background: transparent;
 }
@@ -90,6 +107,45 @@ div.splash-screen {
 div.splash-screen.hidden {
     transform: translateY(-100%);
     transition: all 1s ease 0s;
+}
+
+div.articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 1.5%;
+    grid-row-gap: 1.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+div.article-title-desc {
+    width: 100%;
+    height: 50%;
+    padding: 1.85%;
+}
+
+div.article-title-desc p {
+    overflow: hidden;
+    height: 100%;
+}
+
+div.more-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: black;
+    color: white;
+}
+div.more-container p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 span.material-icons-round {
@@ -225,5 +281,15 @@ button {
     section {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    div.articles-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10%;
+        grid-row-gap: 4%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }
