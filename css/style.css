@@ -87,6 +87,19 @@ footer {
     border-bottom: solid 3px black;
 }
 
+footer img {
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 50px;
+}
+
+div.footer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 span.material-icons-round {
     position: relative;
     background: transparent;
@@ -336,5 +349,31 @@ button {
 
     div.articles-container p {
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    ::-webkit-scrollbar {
+        width: 14px;   
+    }
+      
+    ::-webkit-scrollbar-track {
+        background: black;
+    }
+      
+    ::-webkit-scrollbar-thumb {
+        background: #ffc800;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+        border: solid 3px black;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffc800;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: #e2b100;
+        transition: all 0.3s ease 0s;
     }
 }
