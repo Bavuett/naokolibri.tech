@@ -81,13 +81,114 @@ article {
 }
 
 footer {
-    padding: 5%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: solid 2px black;
+}
+
+span.material-icons-round {
+    position: relative;
+    background: transparent;
+    vertical-align: text-bottom;
+    padding-left: 1%;
+    padding-right: 1%;
+    z-index: 1;
+}
+
+span.material-icons-round.more-icon {
+    transform: rotate(90deg);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: corporate-s-std-urw, sans-serif;
+    font-weight: 700;
+    background: transparent;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    background: transparent;
+    font-family: halyard-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1#title-h1.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+a {
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: all 0.3 ease 0s;
+}
+
+a:active {
+    transition: all 0.3s ease 0s;
+    transform: scale(0.5);
+}
+
+a h1 {
+    color: black;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+a h1:hover {
+    opacity: 0.8;
+    transition: all 0.3 ease 0s;
+}
+
+div.nav-spacer {
+    background: #DE00FF;
+    width: 100%;
+    padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
 }
 
+div.nav-spacer h1 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.link-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+div.link-container p a {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+div.link-container p a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+div.button-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 div {
-   background: transparent;
+    background: transparent;
 }
 
 div.splash-screen {
@@ -135,117 +236,45 @@ div.more-container {
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    width: fit-content;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    border-top: solid black 5px;
+    align-items: center;
+}
+
+div.paragraph {
     background: black;
-    color: white;
-}
-div.more-container p {
-    color: white;
-    font-size: 16px;
-    font-weight: 100;
-}
-
-span.material-icons-round {
-    position: relative;
-    background: transparent;
-    vertical-align: text-bottom;
-    padding-left: 1%;
-    padding-right: 1%;
-    z-index: 1;
-}
-
-span.material-icons-round.more-icon {
-	transform: rotate(90deg);
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    font-family: corporate-s-std-urw, sans-serif;
-    font-weight: 700;
-    background: transparent;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-p {
-    background: transparent;
-    font-family: halyard-micro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1#title-h1.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-a {
-    color: black;
-    background: transparent;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s ease 0s;
-}
-
-a:hover {
-    opacity: 0.5;
-    transition: all 0.3 ease 0s;
-}
-
-a:active {
-    transition: all 0.3s ease 0s;
-    transform: scale(0.5);
-}
-
-a h1{
-    color: black;
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s ease 0s;
-}
-
-a h1:hover {
-    opacity: 0.8;
-    transition: all 0.3 ease 0s;
-}
-
-div.nav-spacer {
-    background: #DE00FF;
     width: 100%;
     padding: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
-div.nav-spacer h1 {
-    opacity: 0;
-    pointer-events: none;
+div.paragraph p {
+    color: white;
 }
 
-div.link-container {
-    padding-top: 2%;
-    padding-bottom: 2%;
+div.paragraph span {
+    color: white;
 }
 
-div.link-container p a {
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 2px;
+div.date {
+    background: #dd00ff;
+    width: 100%;
+    padding: 2%;
 }
 
-div.link-container p a:hover {
-    opacity: 0.6;
-    text-decoration: none;
+div.date p {
+    color: black;
 }
 
-div.button-container {
-    padding-top: 2%;
-    padding-bottom: 2%;
+div.more-container p {
+    font-size: 16px;
+    font-weight: 100;
 }
 
 button {
@@ -260,27 +289,34 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-	nav {
-		background: #DE00FF;
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		position: fixed;
-		padding: 4%;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	
-	header {
-		padding: 5%;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
+    nav {
+        background: #DE00FF;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        padding: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header {
+        padding: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
     section {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    footer {
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-bottom: solid 2px black;
     }
 
     div.articles-container {
