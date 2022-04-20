@@ -28,7 +28,7 @@ nav {
 }
 
 nav.scrolled {
-    border-bottom: solid 2px black;
+    border-bottom: solid 3px black;
 }
 
 nav h1 {
@@ -59,14 +59,14 @@ header {
     padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: solid 2px black;
+    border-bottom: solid 3px black;
 }
 
 section {
     padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: solid 2px black;
+    border-bottom: solid 3px black;
 }
 
 article {
@@ -84,7 +84,7 @@ footer {
     padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: solid 2px black;
+    border-bottom: solid 3px black;
 }
 
 span.material-icons-round {
@@ -222,13 +222,15 @@ div.articles-container {
 
 div.article-title-desc {
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding: 1.85%;
+    border-bottom: inset 5px #ffc800;
+    overflow: hidden;
 }
 
 div.article-title-desc p {
-    overflow: hidden;
     height: 100%;
+    text-overflow: ellipsis;
 }
 
 div.more-container {
@@ -239,6 +241,7 @@ div.more-container {
     width: 100%;
     height: fit-content;
     color: white;
+    background: #dd00ff;
     border-top: solid black 5px;
     align-items: center;
 }
@@ -270,6 +273,7 @@ div.date {
 
 div.date p {
     color: black;
+    text-align: right;
 }
 
 div.more-container p {
@@ -308,6 +312,7 @@ button {
     }
 
     section {
+        padding: 5%;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -327,5 +332,9 @@ button {
         grid-row-gap: 4%;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+
+    div.articles-container p {
+        font-size: 14px;
     }
 }
