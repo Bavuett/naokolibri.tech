@@ -24,7 +24,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
-    padding: 2%;
+    padding: 1.5%;
     padding-left: 15%;
     padding-right: 15%;
     border-bottom: none;
@@ -104,6 +104,15 @@ div.footer-title {
     align-items: center;
 }
 
+div.social-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 15%; 
+    margin-top: 2%;
+}
+
 span.material-icons-round {
     position: relative;
     background: transparent;
@@ -134,9 +143,17 @@ p {
     font-style: normal;
 }
 
+h1#title-h1 {
+    opacity: 1;
+    font-size: 24px;
+    transition: all 0.28s ease 0s;
+}
+
 h1#title-h1.hidden {
     opacity: 0;
-    pointer-events: none;
+    transform: translateY(10%) scale(2);
+    transform-origin: top left;
+    transition: all 0.28s ease 0s;
 }
 
 a {
@@ -276,6 +293,7 @@ div.more-container {
 
 div.paragraph {
     background: black;
+    border: solid 3px black;
     width: 100%;
     padding: 2%;
     display: flex;
@@ -378,6 +396,16 @@ button {
 
     div.articles-container p {
         font-size: 14px;
+    }
+
+    div.social-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        width: 28%;    
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 }
 
