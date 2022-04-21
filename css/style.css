@@ -206,13 +206,9 @@ div.images-container {
 	justify-content: space-between;
 }
 
-div img {
-	width: 10%;
+div.images-container img {
+    width: 30%;
 	border: solid black 3px;
-}
-
-div img#volta {
-	border-radius: 50px;
 }
 
 div.button-container {
@@ -354,6 +350,20 @@ button {
         padding-left: 5%;
         padding-right: 5%;
         border-bottom: solid 2px black;
+    }
+
+    div.images-container {
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+    div.images-container img {
+        width: 30%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     div.articles-container {
