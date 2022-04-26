@@ -1,6 +1,6 @@
 # Kolibri - NAO Challenge 2022
 
-Source code for the Official Kolibri Website. 
+Official website for the "Kolibri" NAO Challenge team.
 
 --- 
 
