@@ -142,7 +142,7 @@ div.social-container {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    width: 15%; 
+    width: 20%; 
     margin-top: 2%;
 }
 
@@ -437,7 +437,7 @@ button {
         flex-direction: row;
         align-content: center;
         justify-content: space-between;
-        width: 28%;    
+        width: 50%;    
         padding-top: 4%;
         padding-bottom: 4%;
     }
