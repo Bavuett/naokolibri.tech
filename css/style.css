@@ -73,6 +73,11 @@ section {
     border-bottom: solid 3px black;
 }
 
+section.post-section-title {
+    position: sticky;
+    top: 10%;
+}
+
 article {
     width: 100%;
     height: 185px;
@@ -395,6 +400,11 @@ button {
         padding: 5%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    section.post-section-title {
+        position: sticky;
+        top: 8%;
     }
 
     footer {
