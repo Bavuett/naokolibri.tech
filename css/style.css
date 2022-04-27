@@ -88,7 +88,10 @@ section.post-section-title {
 
 section.post-section p {
     padding-top: 5%;
-    padding-bottom: 5%;   
+}
+
+section.roles-section p {
+    padding-bottom: 3%;
 }
 
 div.post-title-container {
@@ -96,7 +99,10 @@ div.post-title-container {
 }
 
 ul {
+    padding-top: 5%;
+    padding-right: 5%;
     padding-left: 5%;
+    width: 50%;
 }
 
 article {
@@ -113,7 +119,7 @@ article {
 
 article.role {
     display: flex;
-    height: fit-content;
+    height: 160px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -126,14 +132,14 @@ div.role-desc {
 }
 
 div.role-img {
+    padding-left: 5%;
     width: fit-content;
-    height: 100px;
 }
 
 div.role-img img {
+    height: fit-content;
     border: solid 5px black;
     border-radius: 100px;
-    height: 100%;
 }
 
 div.roles-container {
@@ -434,6 +440,14 @@ div.more-container p {
     font-weight: 100;
 }
 
+div.ppl-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
 div.post-button-container {
     width: fit-content;
 }
@@ -443,6 +457,15 @@ div.post-img-container {
     flex-direction: row;
     justify-content: space-between;
     height: 300px;
+    margin-top: 5%;
+}
+
+div.post-img-container.single {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    margin-top: 0%;
 }
 
 div.post-img-container img {
@@ -517,6 +540,14 @@ button:active {
         height: 80%;
     }
 
+    div.post-img-container.single {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 450px;
+        margin-top: 5%;
+    }
+
     footer {
         padding: 2%;
         padding-left: 5%;
@@ -553,6 +584,42 @@ button:active {
         width: 32.5%;
         margin-top: 2%;
         margin-bottom: 2%;
+    }
+
+    div.ppl-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    div.post-img-container.single {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-start;
+        margin-top: 0%;
+    }
+
+    ul {
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 100%;
+    }
+
+    div.post-img-container.single ul {
+        width: 100%;
+    }
+
+    div.post-img-container.single img {
+        width: 100%;
+    }
+
+    div.post-img-container.single img {
+        width: 100%;
     }
 
     div.articles-container {
