@@ -226,6 +226,10 @@ h1#title-h1.hidden {
     transition: all 0.28s ease 0s;
 }
 
+i {
+    cursor: pointer;
+}
+
 a {
     color: black;
     background: transparent;
