@@ -274,7 +274,8 @@ a article:hover {
 }
 
 a article:active {
-    transform: translateY(-2%) translateX(-2%);
+    transform: translateY(-1%) translateX(-1%);
+    box-shadow: 6px 6px 0px 2px #000000;
 }
 
 div.nav-spacer {
@@ -467,6 +468,12 @@ button:hover {
     transition: all 0.3s ease 0s;
     transform: translateX(-1%) translateY(-1%);
     box-shadow: 8px 8px 0px 2px #000000;
+}
+
+button:active {
+    transition: all 0.3s ease 0s;
+    transform: translateX(-0.5%) translateY(-0.5%);
+    box-shadow: 5px 5px 0px 2px #000000;
 }
 
 @media screen and (max-width: 900px) {
