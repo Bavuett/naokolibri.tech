@@ -396,7 +396,7 @@ button {
 
 button:hover {
     transition: all 0.3s ease 0s;
-    transform: translateX(-1%) translateY(-2%);
+    transform: translateX(-1%) translateY(-1%);
     box-shadow: 8px 8px 0px 2px #000000;
 }
 
