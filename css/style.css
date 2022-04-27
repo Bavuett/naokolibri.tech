@@ -6,7 +6,6 @@
     appearance: none;
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
-    cursor: default;
     user-select: none;
     background: #F8A6CD;
     scroll-behavior: smooth;
@@ -204,13 +203,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.5;
     transition: all 0.3 ease 0s;
-}
-
-a:active {
-    transition: all 0.3s ease 0s;
-    transform: scale(0.5);
 }
 
 a h1 {
@@ -223,6 +216,28 @@ a h1 {
 a h1:hover {
     opacity: 0.8;
     transition: all 0.3 ease 0s;
+}
+
+a h1:active {
+    transform: scale(0.7);
+    transition: all 0.3 ease 0s;
+}
+
+a article {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+a article:hover {
+    transform: none;
+    opacity: 1;
+    transform: translateY(-2%) translateX(-2%);
+    box-shadow: 10px 10px 0px 2px #000000;
+    transition: all 0.3s ease 0s;
+}
+
+a article:active {
+    transform: translateY(-2%) translateX(-2%);
 }
 
 div.nav-spacer {
@@ -372,9 +387,17 @@ button {
     border: none;
     font-family: halyard-micro, sans-serif;
     font-size: 16px;
-    background: black;
-    color: white;
+    background: #ffc900;
+    border: inset 4.5px black;
+    color: black;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    transition: all 0.3s ease 0s;
+    transform: translateX(-1%) translateY(-2%);
+    box-shadow: 8px 8px 0px 2px #000000;
 }
 
 @media screen and (max-width: 900px) {
