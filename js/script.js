@@ -31,3 +31,7 @@ window.switchPage = function(href) {
       window.location.href = href;
     }, 805);
 }
+
+window.addEventListener("pageshow", function(event) {
+    splash.classList.add("hidden");
+});
