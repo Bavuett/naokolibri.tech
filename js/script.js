@@ -33,5 +33,7 @@ window.switchPage = function(href) {
 }
 
 window.addEventListener("pageshow", function(event) {
-    splash.classList.add("hidden");
+    setTimeout(function() {
+        splash.classList.add("hidden");
+    });
 });
