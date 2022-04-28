@@ -15,6 +15,16 @@ window.addEventListener("scroll", function() {
     console.log(window.scrollY);
 });
 
+window.addEventListener("load", function(event) {
+    this.setTimeout(function() {
+        splash.classList.add("hidden");
+    }, 805);
+
+    if (isPost == true) {
+        navBar.classList.add("scrolled");
+    }
+});
+
 window.switchPage = function(href) {
     splash.classList.remove("hidden");
     setTimeout(function() {
@@ -23,13 +33,7 @@ window.switchPage = function(href) {
 }
 
 window.addEventListener("pageshow", function(event) {
-    window.addEventListener("load", function(event) {
-        this.setTimeout(function() {
-            splash.classList.add("hidden");
-        }, 805);
-    
-        if (isPost == true) {
-            navBar.classList.add("scrolled");
-        }
-    });
+    setTimeout(function() {
+        splash.classList.add("hidden");
+    }, 805);
 });
