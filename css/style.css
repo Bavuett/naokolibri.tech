@@ -484,6 +484,7 @@ div.ppl-container {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    padding-top: 5%;
 }
 
 div.post-button-container {
