@@ -35,5 +35,5 @@ window.switchPage = function(href) {
 window.addEventListener("pageshow", function(event) {
     setTimeout(function() {
         splash.classList.add("hidden");
-    });
+    }, 805);
 });
