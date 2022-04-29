@@ -370,6 +370,14 @@ div.images-container {
 	justify-content: space-between;
 }
 
+div.images-container.single {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 div.images-container.home img {
     transition: all 0.3s ease 0s;
     transform: translateX(0%) translateY(0%);

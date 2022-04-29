@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>L'ente con cui collaboriamo | Kolibri - NAO Challenge 2022</title>
+    <link rel="preload" href="/js/script.js" as="script">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1">
+    <script src="https://kit.fontawesome.com/2f8296b4bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/oje2wks.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <h2>Kolibri</h2>
+        <p>NAO Challenge 2022</p>
+        <noscript>
+            <p>Per visualizzare questa pagina, devi avere JavaScript attivato.</p>
+        </noscript>
+    </div>
+    <nav id="nav-main" class="post">
+        <div class="title-div">
+            <h1 id="title-h1">Kolibri</h1>
+        </div>
+        <div class="menu-div">
+            <a onclick="switchPage('https://naokolibri.tech/')">
+                <h1>Home</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-spacer-post">
+        <h1>Mind ur business!</h1>
+    </div>
+    <section class="post-section-title">
+        <div class="post-title-container">
+            <h2>L'ente con cui collaboriamo</h2>
+            <p>29 APR 2022</p>
+        </div>
+        <div class="post-button-container">
+            <p>
+                <a onclick="switchPage('https://naokolibri.tech/posts/')">Indietro</a>
+            </p>
+        </div>
+    </section>
+    <section class="post-section">
+        <p>
+            Bentornati, ancora una volta, nel sito di Kolibri! <br> In questo post vi racconteremo di quando, nel giorno
+            27 Aprile,
+            abbiamo visitato la Soprintendenza Archivistica e Bibliografica dell'Abruzzo e del Molise per avere maggiori
+            informazioni su
+            Corradino d'Ascanio e il suo elicottero.
+        </p>
+        <div class="images-container single" id="#room">
+            <img src="/rsc/ent/MinisteroCultura.png">
+        </div>
+        <p>
+            Abbiamo parlato con la dott.sa Ranalli, esperta delle avventure di d'Ascanio, che ci ha raccontato gli aspetti
+            più importanti della sua vita. Corradino è nato nel 1891 a Popoli, inizialmente Provincia dell'Aquila e odiernamente
+            Provincia di Pescara. <br> A 15 anni, dopo un accurato studio dell'apertura alare di alcuni volatili, ha costruito un
+            deltaplano con il quale ha volato sulle colline del suo paese. 
+        </p>
+        <p>
+            Ha frequentato l'Università di Torino per specializzarsi in Ingengeria Meccanica e, finiti gli studi, si è messo a lavorare
+            per terminare i primi due prototipi di elicotteri a volo verticale, con il quale ottenne un record durando 8 minuti e 45 secondi, 
+            percorrendo 1078 metri di distanza, e alzandosi a 18 metri in altezza.
+        </p>
+        <p>
+            Le uniche testimonianze del suo operato sono state rinvenute nel 1982 in una casa a Torre de Passeri. Prima di allora
+            non si sapeva del suo grande contributo alla storia dell'umanità.
+        </p>
+    </section>
+
+    <footer>
+        <h2>Kolibri</h2>
+        <p>
+            Siamo anche sui social. Vieni a trovarci!
+        </p>
+        <div class="social-container">
+            <i class="fab fa-instagram fa-3x" onclick="switchPage('https://instagram.com/naokolibri.tech')"></i>
+            <i class="fab fa-twitter fa-3x" onclick="switchPage('https://twitter.com/naokolibri')"></i>
+            <i class="fab fa-tiktok fa-3x" onclick="switchPage('https://www.tiktok.com/@naokolibri')"></i>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+        var isPost = true;
+    </script>
+</body>
+
+</html>
