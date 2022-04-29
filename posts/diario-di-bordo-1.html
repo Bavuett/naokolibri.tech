@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Noi siamo Kolibri | Kolibri - NAO Challenge 2022</title>
+    <link rel="preload" href="/js/script.js" as="script">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1">
+    <script src="https://kit.fontawesome.com/2f8296b4bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/oje2wks.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <h2>Kolibri</h2>
+        <p>NAO Challenge 2022</p>
+        <noscript>
+            <p>Per visualizzare questa pagina, devi avere JavaScript attivato.</p>
+        </noscript>
+    </div>
+    <nav id="nav-main" class="post">
+        <div class="title-div">
+            <h1 id="title-h1">Kolibri</h1>
+        </div>
+        <div class="menu-div">
+            <a onclick="switchPage('https://naokolibri.tech/')">
+                <h1>Home</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-spacer-post">
+        <h1>Mind ur business!</h1>
+    </div>
+    <section class="post-section-title">
+        <div class="post-title-container">
+            <h2>Il Diario di Bordo - Parte 1</h2>
+            <p>29 APR 2022</p>
+        </div>
+        <div class="post-button-container">
+            <p>
+                <a onclick="switchPage('https://naokolibri.tech/posts/')">Indietro</a>
+            </p>
+        </div>
+    </section>
+    <section class="post-section">
+        <p>
+            Bentornati! <br> In vista della semifinale, ecco qui una panoramica di come si è svolto
+            il nostro viaggio dall'inizio dei lavori a oggi.
+        </p>
+        
+        <ul class="diary">
+            <li>
+                <b>25 Marzo</b>: Inizio dei lavori sul progetto e sul logo, realizzando le prime bozze.
+            </li>
+            <li>
+                <b>1 Aprile</b>: Ultime decisioni riguardo alle idee del progetto, realizzazione dei primi programmi sperimentali, 
+                sviluppo delle ultime bozze del logo. Inizio dello sviluppo del sito web.
+            </li>
+            <li>
+                <b>8 Aprile</b>: Scelta dei materiali necessari per mettere in pratica il progetto. Scelta finale del logo.
+            </li>
+            <li>
+                <b>20 Aprile</b>: Inizio della produzione di post su Instagram e TikTok.
+            </li>
+            <li>
+                <b>21 Aprile</b>: Assegnazione definitiva dei ruoli del gruppo.
+            </li>
+        </ul>
+
+        <div class="images-container">
+            <img src="/rsc/etc/DevWork.jpg" />
+            <img src="/rsc/etc/ArcWork.jpg" />
+        </div>
+        
+        <ul class="diary">
+            <li>
+                <b>22 Aprile</b>: Ottenimento dell'ultimo componente necessario (Tello). Prime prove di utilizzo del drone. 
+            </li>
+            <li>
+                <b>26 Aprile</b>: Prova del collegamento del Drone con un PC per provare l'utilizzo. Installazione della libreria necessaria
+                su NAO, tramite Python PIP. Preparazione dei primi post del sito. Inizio dello sviluppo delle interazioni tra NAO e Tello.
+            </li>
+        </ul>
+
+        <div class="images-container-single" id="#room">
+            <img src="/rsc/etc/room.jpg" />
+        </div>
+
+        <ul class="diary">
+            <li>
+                <b>27 Aprile</b>: Completamento del design del sito, con conseguente pubblicazione del primo post scritto il giorno precedente.
+                Registrazione delle interviste e presentazioni.
+            </li>
+            <li>
+                <b>28 Aprile</b>: Ultimazione di tutti i lavori.
+            </li>
+        </ul>
+        <p>
+            È questo è tutto. Noi ci rivediamo al prossimo aggiornamento. Alla prossima!
+        </p>
+    </section>
+
+    <footer>
+        <h2>Kolibri</h2>
+        <p>
+            Siamo anche sui social. Vieni a trovarci!
+        </p>
+        <div class="social-container">
+            <i class="fab fa-instagram fa-3x" onclick="switchPage('https://instagram.com/naokolibri.tech')"></i>
+            <i class="fab fa-twitter fa-3x" onclick="switchPage('https://twitter.com/naokolibri')"></i>
+            <i class="fab fa-tiktok fa-3x" onclick="switchPage('https://www.tiktok.com/@naokolibri')"></i>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+        var isPost = true;
+    </script>
+</body>
+
+</html>

@@ -89,6 +89,10 @@ section.post-section-title {
 }
 
 section.post-section p {
+    padding-top: 1%;
+}
+
+section.post-section h3 {
     padding-top: 5%;
 }
 
@@ -98,6 +102,17 @@ section.roles-section p {
 
 div.post-title-container {
     width: 70%;
+}
+
+ul.diary {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+ul.diary li {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 ul {
@@ -377,6 +392,14 @@ div.images-container.home img:active {
 div.images-container img {
     width: 30%;
 	border: solid black 3px;
+}
+
+div.images-container-single #room {
+    width: 30%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 div.button-container {
