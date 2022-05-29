@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Post | Kolibri - NAO Challenge 2022</title>
+    <link rel="preload" href="/js/script.js" as="script">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1">
+    <script src="https://kit.fontawesome.com/2f8296b4bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/oje2wks.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <h2>Kolibri</h2>
+        <p>NAO Challenge 2022</p>
+        <noscript>
+            <p>Per visualizzare questa pagina, devi avere JavaScript attivato.</p>
+        </noscript>
+    </div>
+    <nav id="nav-main">
+        <div class="title-div">
+            <a onclick="switchPage('')">
+                <h1 id="title-h1" class="hidden">
+                    Post
+                </h1>
+            </a>
+        </div>
+        <div class="menu-div">
+            <a onclick="switchPage('https://naokolibri.tech')">
+                <h1>Home</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-spacer">
+        <h1>Mind ur business!</h1>
+    </div>
+    <header>
+        <h1>Materiali</h1>
+        <p>
+            Qui tutti i materiali del nostro progetto!
+        </p>
+    </header>
+    <section>
+        <div class="section-header">
+            <h2>Tutti i materiali</h2>
+            <p>
+                Scarica tutti i materiali del nostro progetto!
+            </p>
+        </div>
+        <div class="section-content">
+            <div class="articles-container">    </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Kolibri</h2>
+        <p>
+            Siamo anche sui social. Vieni a trovarci!
+        </p>
+        <div class="social-container">
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+        var isPost = false;
+    </script>
+</body>
+
+</html>

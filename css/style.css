@@ -517,6 +517,14 @@ div.ppl-container {
     align-items: center;
     padding-top: 5%;
 }
+div.menu-div{
+
+    display: flex;
+
+}
+#post{
+    margin-right: 10px;
+}
 
 div.post-button-container {
     width: fit-content;
